@@ -2,15 +2,113 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  padding-top: 70px;
+  padding-bottom:100px;
 }
 
 .song-container {
-  display: inline;
   padding-bottom:0px;
   border-radius:0px !important;
   border-left:0px;
   border-right:0px;
   border-top:0px;
+  border:0px;
+}
+
+#current-song {
+  background-color: #fff;
+  color:#2ecc71;
+}
+
+#header {
+  background-color: #2ecc71;
+}
+
+#header a {
+  color:#fff
+}
+
+.songs-list{
+  overflow-y: scroll;
+  min-height: 100%;
+  position: relative;
+}
+
+
+
+.thumbnail {
+  padding:2px;
+  padding-bottom:3px;
+}
+
+.thumbnail img {
+  border:1px;
+  border-radius:12.5px;
+
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+  -moz-box-shadow: rgba(0,0,0,0.3) 0 1px 3px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 4px 5px;
+  height: 85%;
+  margin-right:10%;
+  margin-left:10%;
+}
+
+.thumbnail-badge {
+  position: absolute;
+  left:2.5px;
+  z-index: 100;
+  color:#fff;
+  background-color:#2ecc71;
+}
+
+.current-thumbnail {
+  margin-top:5px;
+  padding-left:5px !important;
+
+  padding:0px;
+}
+
+.item-container {
+  margin-top:10px;
+  padding:0px;
+  border:0px;
+}
+
+
+.item-container .col-3 {
+  padding:0px !important;
+}
+
+.item-container .col-4 {
+  padding:0px !important;
+}
+
+.item-container .col-8 {
+  padding-right:0px !important;
+}
+
+.song-duration {
+  height:5px;
+  background-color: #2ecc71;
+}
+.song-duration-background {
+  height:5px;
+  background-color: #fff;
+  width:100%;
+}
+
+.song-badge {
+  margin-right:15px;
+}
+
+.song-badge > span{
+  color:#fff;
+  background-color:#2ecc71;
+}
+
+.badge-song {
+  color:#fff;
+  background-color:#2ecc71;
 }
 
 .sticky {
@@ -22,6 +120,7 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
+  z-index: 101;
 }
 
 .current-song {
@@ -31,11 +130,14 @@ body {
 
 .icon {
   float:right;
-  font-size:1.5em;
-  margin-top:1%;
+  font-size:1.3em;
+  margin-right:10%;
 }
 
-.song {}
+.song {
+  margin-top:2px;
+  vertical-align:middle;
+}
 
 .song p {
   margin-bottom:0px;
