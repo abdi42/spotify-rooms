@@ -61,6 +61,17 @@ body {
   background-color:#2ecc71;
 }
 
+
+.btn-link {
+  color:'white';
+}
+
+.btn-link:hover {
+  color:'white';
+  text-decoration:none !important;
+}
+
+
 .current-thumbnail {
   margin-top:5px;
   padding-left:5px !important;
